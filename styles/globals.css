@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend');
+
+html{
+  background-color: #323232;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Lexend;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+svg {
+  float: right;
+
+  fill: #cccccc;
+  cursor: hover;
+}
+
+svg:hover {
+  fill: #aaaaaa;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
