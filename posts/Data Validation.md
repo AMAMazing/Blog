@@ -2,7 +2,7 @@
 title: 'Data Validation'
 date: 'Jan 28, 2022'
 description: 'Php data validation, sanitisation, verification and checking'
-coverimage: '/images/Rectangle5.png'
+coverimage: '/Images/Rectangle5.png'
 ---
 
 ## Data Validation

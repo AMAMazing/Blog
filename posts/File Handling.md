@@ -2,7 +2,7 @@
 title: 'File handling'
 date: 'Mar 1, 2023'
 description: 'How to do file handling in php'
-coverimage: '/images/Rectangle4.png'
+coverimage: '/Images/Rectangle4.png'
 ---
 
 https://www.w3schools.com/php/php_file.asp

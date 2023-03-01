@@ -2,7 +2,7 @@
 title: 'Multidimensional Arrays'
 date: 'Feb 9, 2023'
 description: 'Tutorial on how to use multidimensional arrays in php'
-coverimage: '/images/Rectangle5.png'
+coverimage: '/Images/Rectangle5.png'
 ---
 
 ## Multidimesional Array

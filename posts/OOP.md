@@ -2,7 +2,7 @@
 title: 'Object Oriented Programming'
 date: 'Aug 10, 2020'
 description: 'Guide through Object Oriented Programming (OOP) in PHP with examples on classes, objects and more'
-coverimage: '/images/Rectangle4.png'
+coverimage: '/Images/Rectangle4.png'
 ---
 
 ## Object Oriented Programming:

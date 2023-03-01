@@ -2,7 +2,7 @@
 title: 'Searching algorithms'
 date: 'Feb 27, 2023'
 description: 'Searching algorithms and big O notation in PHP'
-coverimage: '/images/Rectangle5.png'
+coverimage: '/Images/Rectangle5.png'
 ---
 
 ## Search & Sort

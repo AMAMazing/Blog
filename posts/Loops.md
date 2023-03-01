@@ -2,7 +2,7 @@
 title: 'Loops'
 date: 'Sep 13, 2022'
 description: 'All the different loops in php'
-coverimage: '/images/Rectangle5.png'
+coverimage: '/Images/Rectangle5.png'
 ---
 
 ## Topics:

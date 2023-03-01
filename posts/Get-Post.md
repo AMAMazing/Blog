@@ -2,7 +2,7 @@
 title: 'HTTP Methods/Forms'
 date: 'Feb 9, 2023'
 description: 'HTTP methods/forms in php like GET and Post'
-coverimage: '/images/Rectangle4.png'
+coverimage: '/Images/Rectangle4.png'
 ---
 
 ## Topics:
