@@ -17,7 +17,7 @@
     "gray-matter": "^4.0.3",
     "markdown-loader": "^8.0.0",
     "marked": "^4.2.12",
-    "next": "13.1.5",
+    "next": "^13.1.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.4"
