@@ -6,10 +6,11 @@ export default function Post({ post, pos }) {
   return (
     <div className='card'>
       <div>
+      <Link href={`/blog/${post.slug}`}>
         <div className='postimg'>
           <Image
-          src="/Images/Rectangle4.png"
-          alt="AMA"
+          src={post.frontmatter.coverimage}
+          alt=""
           fill
           
           />
@@ -23,6 +24,7 @@ export default function Post({ post, pos }) {
 
           <div className='postdesc'>{post.frontmatter.description}</div>
         </div>
+        </Link>
       </div>
     </div>
   )

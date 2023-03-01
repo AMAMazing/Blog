@@ -3,26 +3,46 @@ import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
 import Link from 'next/link'
+import styles from '/styles/Home.module.css'
+import Image from 'next/image'
+
 
 export default function PostPage({
-  frontmatter: { title, date},
+  frontmatter: { title, date, description, coverimage},
   slug,
   content,
 }) {
   return (
-    <>
-      <Link href='/'>
-        <a className='btn btn-back'>Go Back</a>
-      </Link>
-      <div className='card card-page'>
-        <h1 className='post-title'>{title}</h1>
-        <div className='post-body'>
-          <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+    <div className={styles.container}>
+      <div className="topcard">
+        <div className="coverimg">
+        <Image
+            src={coverimage}
+            alt=""
+            fill
+            
+            />
+        </div>
+
+        <div className="inposttext">
+          <div className="inpostdate">{date}</div>
+
+          <div className="inposttitle">{title}</div>
+
+          <div className="inpostdesc">{description}</div>
+          
         </div>
       </div>
-    </>
+      <div className="htmltext" dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+    </div>
   )
 }
+
+
+{/* <h1>{title}</h1>
+        <div>
+        <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+        </div> */}
 
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join('posts'))

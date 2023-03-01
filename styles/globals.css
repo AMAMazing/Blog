@@ -42,7 +42,7 @@ svg:hover {
 
 
 .postimg {
-  position:relative;
+  position: relative;
   border-radius: 30%;
   aspect-ratio: 16 / 9;
   clear: both;
@@ -53,32 +53,41 @@ svg:hover {
   width: 50%;
   float: left;
   margin-right: 2rem;
+  padding-bottom: 0px;
 }
 
 img {
   border-radius: 5px;
 }
 
+.card {
+  box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
 
 .card:first-of-type .postdate{
-  font-size: 1.4rem;
+  /* font-size: 1.4rem */;
+  font-size: 1.4vw;
+  padding-top: 20px;
   color: #C5C5C5;
 }
 .postdate {
-  margin-top: 10px;
   font-size: 1.25rem;
   color: #C5C5C5;
 }
 
-.card:not(:first-of-type) .postdate {
+.card:not(:first-of-type) {
+  padding-bottom: 10px;
+}
 
+.posttitle:hover {
+  text-decoration: underline;
 }
 
 
-
-
 .card:nth-of-type(1) .posttitle {
-  font-size: 5rem;
+  /* font-size: 5rem; */
+  font-size: 5vw;
   font-weight: 100;
   color: #FFFFFF;
 }
@@ -91,7 +100,8 @@ img {
 }
 
 .card:nth-of-type(1) .postdesc {
-  font-size: 1.7rem;
+  /* font-size: 1.7vw; */
+  font-size: 1.7vw;
   margin-top: -50px;
 }
 
@@ -104,8 +114,6 @@ img {
   clear: both;
 }
 
-
-
 .posts {
   display: grid;
   grid-column-start: 1;
@@ -117,5 +125,59 @@ img {
   grid-column-start: 1;
   grid-column-end: -1;
 }
+
+.cardtext {
+  padding: 20px;
+}
+
+.topcard {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-areas: ". image image image image text text text text .";
+  
+}
+
+.topcard > * {
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+.coverimg {
+  aspect-ratio: 16 / 9;
+  position: relative;
+  width: 100%;
+  grid-area: image;
+}
+
+.inposttext {
+  grid-area: text;
+  padding: 30px;
+}
+
+.inpostdate {
+  font-size: 1.2vw;
+  color: #C5C5C5;
+}
+
+.inposttitle {
+  font-size: 3vw;
+  font-weight: 100;
+}
+
+.inpostdesc {
+  font-size: 1.5vw;
+  margin-top: 20px;
+}
+
+.htmltext {
+  font-size: 1.5em;
+  padding-left: 125px;
+  padding-right: 125px;
+}
+
+.htmltext h1 {
+  font-size: 2.5em;
+}
+
 
 
