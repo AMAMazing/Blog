@@ -18,7 +18,7 @@ export default function PostPage({
         <div className="coverimg">
         <Image
             src={coverimage}
-            alt=""
+            alt="image"
             fill
             
             />

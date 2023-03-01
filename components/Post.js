@@ -10,7 +10,7 @@ export default function Post({ post, pos }) {
         <div className='postimg'>
           <Image
           src={post.frontmatter.coverimage}
-          alt=""
+          alt="image"
           fill
           
           />

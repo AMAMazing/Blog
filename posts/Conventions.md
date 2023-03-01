@@ -2,7 +2,7 @@
 title: 'Conventions'
 date: 'Jan 23, 2023'
 description: 'Php conventions, comments, file handling'
-coverimage: '../Images/Rectangle4.png'
+coverimage: '/Images/Rectangle4.png'
 ---
 
 ## Content:
