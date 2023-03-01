@@ -7,8 +7,9 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { sortByDate } from '../utils'
 import Post from '../components/Post'
+import { Key } from 'react';
 
-export default function Home({ posts }) {
+export default function Home({ posts }: any) {
   return (
     <div className={styles.container}>
       <Head>
@@ -53,7 +54,7 @@ export default function Home({ posts }) {
 
       {/* */}
       <div className='posts'> 
-        {posts.map((post, index) => ( // 
+        {posts.map((post: any, index: Key | null | undefined) => ( // 
           <Post key ={index} post={post} pos={index}/>
         ))}
       </div>
