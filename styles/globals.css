@@ -39,3 +39,83 @@ svg:hover {
     background: black;
   }
 }
+
+
+.postimg {
+  position:relative;
+  border-radius: 30%;
+  aspect-ratio: 16 / 9;
+  clear: both;
+}
+
+.card:nth-of-type(1) .postimg {
+  display: block;
+  width: 50%;
+  float: left;
+  margin-right: 2rem;
+}
+
+img {
+  border-radius: 5px;
+}
+
+
+.card:first-of-type .postdate{
+  font-size: 1.4rem;
+  color: #C5C5C5;
+}
+.postdate {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  color: #C5C5C5;
+}
+
+.card:not(:first-of-type) .postdate {
+
+}
+
+
+
+
+.card:nth-of-type(1) .posttitle {
+  font-size: 5rem;
+  font-weight: 100;
+  color: #FFFFFF;
+}
+
+.posttitle {
+  font-size: 2rem; 
+  font-weight: 100;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.card:nth-of-type(1) .postdesc {
+  font-size: 1.7rem;
+  margin-top: -50px;
+}
+
+.postdesc {
+  font-size: 1.25rem;
+  margin-top: -25px;
+}
+
+.card:nth-of-type(2) {
+  clear: both;
+}
+
+
+
+.posts {
+  display: grid;
+  grid-column-start: 1;
+  grid-gap: 3em;
+  grid-template-columns: repeat(auto-fit, minmax(22vw, 1fr));
+}
+
+.card:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+
