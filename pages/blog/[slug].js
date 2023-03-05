@@ -5,7 +5,7 @@ import { marked } from 'marked'
 import Link from 'next/link'
 import styles from '/styles/Home.module.css'
 import Image from 'next/image'
-
+import Head from 'next/head';
 
 export default function PostPage({
   frontmatter: { title, date, description, coverimage},
@@ -14,6 +14,11 @@ export default function PostPage({
 }) {
   return (
     <div className={styles.container}>
+      <Head>
+          <title>{title}</title>
+          <meta name="description" content="{description}" />
+          <link rel="icon" href="\favicon.ico" />
+      </Head>
       <div className="topcard">
         <div className="coverimg">
         <Image
@@ -37,12 +42,6 @@ export default function PostPage({
     </div>
   )
 }
-
-
-{/* <h1>{title}</h1>
-        <div>
-        <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-        </div> */}
 
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join('posts'))

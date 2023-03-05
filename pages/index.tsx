@@ -7,10 +7,16 @@ import styles from '../styles/Home.module.css'
 import { sortByDate } from '../utils'
 import Post from '../components/Post'
 import { Key } from 'react';
+import Head from 'next/head';
 
 export default function Home({ posts }: any) {
   return (
     <div className={styles.container}>
+      <Head>
+          <title>AMA Mazing Blog</title>
+          <meta name="description" content="Blog for projects made by AMA Mazing" />
+          <link rel="icon" href="\favicon.ico" />
+      </Head>
       {/* */}
       <div className='posts'> 
         {posts.map((post: any, index: Key | null | undefined) => ( // 
