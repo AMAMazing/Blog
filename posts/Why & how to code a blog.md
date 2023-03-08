@@ -25,7 +25,7 @@ There are countless popular blogs today some which make hundreds of thousands to
 # How to make a blog
 ## NextJS
 This code will be made using typescript NextJS so start by initalising the project in the terminal. 
-``` php
+``` plaintext
 npx create-next-app blog
 cd blog
 npm run dev
@@ -40,7 +40,7 @@ Then create a folder called components and create a file called Header.js
 
 Then go to _app.tsx where you should see this
 
-```
+``` tsx
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 
@@ -51,7 +51,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
 Add the header component to the file by copying the following
 
-```
+``` tsx
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Header from "../components/Header";
@@ -66,11 +66,11 @@ export default function App({ Component, pageProps }: AppProps) {
   )
 }
 
-```
+``` 
 
 Add imports
 
-```
+``` tsx
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '/styles/Home.module.css'
