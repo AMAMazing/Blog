@@ -13,7 +13,7 @@ export default function PostPage({
   // Gets the variables from staticprops
   frontmatter: { title, date, description, coverimage},
   html, 
-}) {
+}: any) {
   return (
     <div className={styles.container}>
       {/* Sets the metadata and title of page to post details */}
