@@ -7,7 +7,7 @@ coverimage: '/Images/highlightjs/thumbnail.png'
 
 Source code: https://github.com/AMAMazing/Single-page-markdown
 
-Website: https://single-page-markdown.vercel.app/
+Demo Website: https://single-page-markdown.vercel.app/
 
 # The problem
 
