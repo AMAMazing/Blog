@@ -1,7 +1,7 @@
 ---
 title: 'HighlightJS with markdown'
 date: 'Mar 1, 2023'
-description: 'A guide on how to use Highlight JS and markdown.'
+description: 'A guide on how to use Highlight JS with markdown.'
 coverimage: '/Images/highlightjs/thumbnail.png'
 ---
 
