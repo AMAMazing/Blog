@@ -68,7 +68,7 @@ export async function getStaticPaths() {
   }
 }
 // Getstaticprops runs on the server making the website faster
-export async function getStaticProps({ params: { slug } }) {
+export async function getStaticProps({ params: { slug } }: any) {
   // Sets markdownwithmeta to path to post file
   const markdownWithMeta = fs.readFileSync(
     path.join('posts', slug + '.md'),
