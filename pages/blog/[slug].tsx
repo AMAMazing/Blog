@@ -19,7 +19,7 @@ export default function PostPage({
       {/* Sets the metadata and title of page to post details */}
       <Head>
           <title>{title}</title>
-          <meta name="description" content="{description}" />
+          <meta name="description" content={description} />
           <link rel="icon" href="\favicon.ico" />
       </Head>
 
