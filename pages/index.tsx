@@ -19,8 +19,9 @@ export default function Home({ posts }: any) { // Creates the homepage and impor
       </Head>
 
       <div className='posts'>
-        {posts.map((post: any) => ( // Displays every post in the variable posts
-          <Post post={post} /> // Uses the post component to display post
+       {/* Displays every post in the variable posts */}
+        {posts.map((post: any, index: Key | null | undefined) => ( // key iterator is required but can be set to null
+          <Post key ={index} post={post} /> // Uses the post component to display post, key still required
         ))}
       </div>
       
