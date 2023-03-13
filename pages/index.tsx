@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { sortByDate } from '../utils'
-import Post from '../components/Post.tsx'
+import Post from '../components/Post.js'
 import { Key } from 'react';
 import Head from 'next/head';
 
