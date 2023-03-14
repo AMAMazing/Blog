@@ -42,7 +42,7 @@ and you should see this when going to localhost
 
 <img src="\Images\highlightjs\Screenshots\localhost_3002_.png" alt="" style="width: 100%; ">
 
-Next go to *pages/index.tsx* below the imports already their, add these imports
+Next go to *pages/index.tsx* and below the imports already their, add these imports
 ``` tsx
 import fs from 'fs'
 import matter from 'gray-matter'
@@ -63,7 +63,7 @@ npm i --save-dev @types/marked
 ```
 Marked is the library that compiles markdown to html.
 
-Lastly highlight.js is also installked through the terminal by entering `npm install highlight.js`
+Lastly highlight.js is also installed through the terminal by entering `npm install highlight.js`
 
 Then add your markdown file to the pages folder and I'm going to be calling it *page.md*. Make sure the file has metadata at the top of the page such as title and description like this
 
