@@ -15,6 +15,7 @@ export default function Home({ posts }: any) { // Creates the homepage and impor
       <Head> 
           <title>AMA Mazing Blog</title>
           <meta name="description" content="Blog for projects made by AMA Mazing" />
+          <meta name="og:image" content="\homepage.png" />
           <link rel="icon" href="\favicon.ico" />
       </Head>
 

@@ -2,7 +2,6 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
-import Link from 'next/link'
 import styles from '/styles/Home.module.css'
 import Image from 'next/image'
 import Head from 'next/head';
@@ -20,6 +19,7 @@ export default function PostPage({
       <Head>
           <title>{title}</title>
           <meta name="description" content={description} />
+          <meta name="og:image" content={coverimage} />
           <link rel="icon" href="\favicon.ico" />
       </Head>
 
@@ -67,6 +67,7 @@ export async function getStaticPaths() {
     fallback: false,
   }
 }
+
 // Getstaticprops runs on the server making the website faster
 export async function getStaticProps({ params: { slug } }: any) {
   // Sets markdownwithmeta to path to post file
