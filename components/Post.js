@@ -6,7 +6,7 @@ export default function Post({ post }) {
   return (
     <div className='card'>
       <div>
-      <Link href={`/post/${post.slug}`}> {/* Redicts the user to the post page (slug) when clicked */}
+      <Link href={`/blog/${post.slug}`}> {/* Redicts the user to the post page (slug) when clicked */}
         {/* Displays the post image */}
         <div className='postimg'>
           <Image
