@@ -42,7 +42,7 @@ export async function getStaticProps() {
 
     // Sets markdownwithmeta to path to post file
     const markdownWithMeta = fs.readFileSync(
-      path.join('posts', filename),
+      path.join('blog', filename),
       'utf-8'
     )
 
