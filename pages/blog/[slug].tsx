@@ -72,7 +72,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params: { slug } }: any) {
   // Sets markdownwithmeta to path to post file
   const markdownWithMeta = fs.readFileSync(
-    path.join('blog', slug + '.md'),
+    path.join('posts', slug + '.md'),
     'utf-8'
   )
     // Gets frontmatter and content of post
