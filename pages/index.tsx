@@ -33,7 +33,7 @@ export default function Home({ posts }: any) { // Creates the homepage and impor
 // Getstaticprops runs on the server making the website faster
 export async function getStaticProps() {
   // Set the path to posts
-  const files = fs.readdirSync(path.join('posts'))
+  const files = fs.readdirSync(path.join('blog'))
 
   // Puts the the list of files in the posts variable
   const posts = files.map((filename) => { 
