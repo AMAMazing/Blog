@@ -33,7 +33,7 @@ export default function Home({ posts }: any) { // Creates the homepage and impor
 // Getstaticprops runs on the server making the website faster
 export async function getStaticProps() {
   // Set the path to posts
-  const files = fs.readdirSync(path.join('blog'))
+  const files = fs.readdirSync(path.join('posts'))
 
   // Puts the the list of files in the posts variable
   const posts = files.map((filename) => { 
@@ -42,7 +42,7 @@ export async function getStaticProps() {
 
     // Sets markdownwithmeta to path to post file
     const markdownWithMeta = fs.readFileSync(
-      path.join('blog', filename),
+      path.join('posts', filename),
       'utf-8'
     )
 
